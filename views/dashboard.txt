@@ -1,0 +1,17 @@
+			        <div class="apps">
+            <a class="app" href="https://polaros.xyz/">
+                <img src="/PolarOS.png" alt="Icon" class="icon">
+                <h1>Website</h1>
+            </a>
+			
+            <a class="app" href="https://store.polaros.xyz">
+                <img src="/PolarStore.png" alt="Store Icon" class="icon">
+                <h1>PolarStore OPEN Beta</h1>
+            </a>
+			
+			<a class="app" href="https://polaros.xyz/docs">
+                <img src="/polarEssentials.png" alt="Docs Icon" class="icon">
+                <h1>Documentation</h1>
+            </a>
+                  </div>
+    </div>

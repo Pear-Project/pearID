@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <script src="https://kit.fontawesome.com/4553d7ab49.js" crossorigin="anonymous"></script>
+        <title>pearID</title>
+    </head>
+    <body>
+        <button><a href="/logout" style="text-decoration: none; color: gray;">Log out</a></button>
+        <div class="center-all">
+        <div class="profile">
+            <img src="<%- member.displayAvatarURL({dynamic : true}) %>" alt="Discord profile picture" class="profile-picture">
+            <div class="info">
+                <p class="name"><%- user.username %>#<%- user.discriminator %></p>
+
+                <div class="status">
+                    <div class="dot"></div>
+                    <p class="status"><%- member.presence.status %></p>
+                </div>
+            </div>
+        </div> 
+        <div class="apps">
+            <a class="app" href="#">
+                <img src="https://pearos.xyz/images/logo.png" alt="Icon" class="icon">
+                <h1>Download PearOS NiceC0re (indev)</h1>
+            </a>
+			
+            <a class="app" href="#">
+                <img src="https://pearos.xyz/images/logo.png" alt="Store Icon" class="icon">
+                <h1>Download PearOS NiceC0re Arch (indev)</h1>
+            </a>
+			
+			<a class="app" href="#">
+                <img src="https://pearos.xyz/images/logo.png" alt="Docs Icon" class="icon">
+                <h1>Post A Suggestion</h1>
+            </a>
+                  </div>
+    </div>
+    </body>
+    
+    <script>
+        const discordStatus = () => {
+            const status = document.querySelector('p.status');
+            const dot = document.querySelector('.dot');
+            
+            switch(status.innerText) {
+                case 'online':
+                    status.innerText = 'Online';
+                    status.classList.add('online');
+                    dot.classList.add('online');
+                    break;
+
+                case 'idle':
+                    status.innerText = 'Idle';
+                    status.classList.add('idle');
+                    dot.classList.add('idle');
+                    break;
+
+                case 'dnd':
+                    status.innerText = 'Do not disturb';
+                    status.classList.add('dnd');
+                    dot.classList.add('dnd');
+                    break;
+
+                case 'offline':
+                    status.innerText = 'Offline';
+                    status.classList.add('invisible');
+                    dot.classList.add('invisible');
+                    break;
+
+               default:
+                    status.innerText = 'Offline';
+                    status.classList.add('invisible');
+                    dot.classList.add('invisible');
+                    break;
+            }
+        }
+
+        discordStatus();
+    </script>
+</html>

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+body h1 {
+  font-size: 3em;
+  color: #646464;
+}
+
+body .login {
+  margin-top: 60px;
+  background: #5865F2;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .25s background;
+  transition: .25s background;
+}
+
+body .login:hover {
+  background: #4865F2;
+}
+
+body .login i {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  body h1 {
+    font-size: 2em;
+  }
+  body .login {
+    margin-top: 50px;
+    padding: 17px;
+    font-size: 1em;
+  }
+  body .login i {
+    font-size: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+  body h1 {
+    color: #dbdbdb;
+  }
+}
+/*# sourceMappingURL=login.css.map */

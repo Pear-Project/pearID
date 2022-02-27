@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/login.css">
+<script src="https://kit.fontawesome.com/4553d7ab49.js" crossorigin="anonymous"></script>
+<script src="./adbdetect.packed.js"></script>
+
+<script>
+        var adBD = adBDetect().setup({
+            debug: true,
+            setPage: 'ad-detect.html',
+            wait: 0,
+        });
+        adBD.start();
+        if (adBD.isDetected()) {
+            window.location.assign('/disable-adblock');
+        }
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T5Z4YHX5K0');
+</script>
+
+<title>pearID</title>
